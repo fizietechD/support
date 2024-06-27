@@ -1,3 +1,56 @@
+## 2.12.0
+
+Release Date: June 18, 2024
+
+#### RELEASE NOTES
+
+```
+Added new calculated fields for Get-JCSystemInsights Tables LogicalDrives, Mounts, and SystemInfo to include human readable sizes in GB for the following fields: PhysicalMemory, blocks, blocksAvailable, freeSpace, and size
+```
+
+#### IMPROVEMENTS:
+
+* Added calculated fields for the `Get-JCSystemInsights` following tables:
+    * LogicalDrives - freeSpaceGB, sizeGB
+    * Mounts - blocksGB, blocksAvailableGB
+    * systemInfo - physicalMemoryGB
+
+## 2.11.0
+
+Release Date: June 13, 2024
+
+#### RELEASE NOTES
+
+```
+Introducing a new function Get-JcScheduledUserstate - This will allow for the lookup of upcoming user suspensions/activations
+```
+
+#### FEATURES:
+
+New Function: `Get-JcScheduledUserState` - Allows for the lookup of scheduled userstate changes. This will list upcoming suspensions or activations as well as being able to search for a particular user's upcoming state changes by their UserID
+
+
+## 2.10.2
+
+Release Date: May 30, 2024
+
+#### RELEASE NOTES
+
+```
+Fixed a bug when creating a staged user and attempting to enable MFA
+Removed the unused `systemToken` property from the Get-JCSystem function
+```
+
+#### BUG FIXES:
+
+Fixed a bug when creating a staged user and attempting to enable MFA
+
+
+#### FEATURES:
+
+Removed the `systemToken` property from the Get-JCSystem function
+
+
 ## 2.10.1
 
 Release Date: April 2, 2024
